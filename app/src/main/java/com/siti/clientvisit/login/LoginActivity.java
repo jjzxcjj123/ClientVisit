@@ -12,6 +12,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //就啊索朗多吉法拉第解放了空间啊了
 
     }
 
