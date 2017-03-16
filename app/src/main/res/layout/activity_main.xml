@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+                <com.siti.customview.CircleWaveView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:waveColor="@color/colorWhite"
+                    app:textColor="@color/colorPrimaryDark"
+                    app:waveCount="4"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.siti.customview.WaterWaveView
+                android:layerType="software"
+                android:id="@+id/wave1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:amplitude="20dp"
+                app:duration="2500"
+                app:waterColor="@color/colorPrimaryLight"
+                app:waveLength="400dp"
+                />
+
+            <com.siti.customview.WaterWaveView
+                android:layerType="software"
+                android:id="@+id/wave2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:amplitude="20dp"
+                app:duration="2000"
+                app:waterColor="@color/colorWhite"
+                app:waveLength="400dp"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/user_name_edit_text"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:hint="账户"
+            android:textSize="18sp"
+            app:et_inputId="@+id/input_user_name_edit_text"
+            app:et_supportMode="none"
+            style="@style/LightEditText"
+            android:layout_marginTop="10dp"
+        />
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:hint="密码"
+            android:textSize="18sp"
+            app:et_supportMode="none"
+            app:et_inputId="@+id/input_password_edit_text"
+            style="@style/LightEditText"
+            android:layout_marginTop="10dp"
+        />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
